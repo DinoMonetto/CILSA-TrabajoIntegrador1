@@ -1,19 +1,36 @@
 body {
-    background-color: #ffb9e2ea; 
-    font-family: Arial, sans-serif;
+    background-color: #fceaf5; 
+    margin: 0;
+    padding: 0;
+    padding-top: 58px;
 }
 
 .navbar {
-    background-color: #ffb9e2ea;
+    background-color: #ffd4ed !important;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 0px 0px 8px 0px #c4c4c4;
 }
 
-/* cards */
+.dropdown-menu{
+    background-color: #fceaf5;
+    box-shadow: 0px 0px 8px 0px #fceaf5;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto; 
+}
+
 .product-card {
     background-color: #ffe5f0; 
-    margin-bottom: 20px;
     height: 100%; 
-    border: 1px solid #ff99c2; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ffbad5; 
+    box-shadow: 0px 0px 8px 0px #ff99c2; 
+    margin: 10px;
 }
 
 .product-card img {
@@ -29,30 +46,69 @@ body {
     align-items: center;
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: 400px; 
-    object-fit: cover; 
+footer{
+    background-color: #fac0e2;
+    box-shadow: 0px 0px 8px 0px #c4c4c4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p{
+    margin: 0;
+    font-weight: bold;
 }
 
 /* Responsive para tablets */
 @media (max-width: 992px) {
     .carousel-inner img {
-        height: 350px; 
+        height: 400px; 
     }
 
     .product-card img {
-        height: 200px; 
+        height: 250px; 
     }
 }
 
 /* Responsive para mobile */
 @media (max-width: 768px) {
     .carousel-inner img {
-        height: 250px; 
+        height: 300px; 
     }
 
     .product-card img {
-        height: 150px; 
+        height: 250px; 
     }
+}
+
+/*detalles de productos*/
+.product-detail{
+    background-color: #ffe5f0;
+    width: 1000px; 
+    height: 100%; 
+    border: 1px solid #ffbad5; 
+    box-shadow: 0px 0px 8px 0px #ff99c2; 
+    margin: 0 20px;
+}
+
+.product-detail .card-body{
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.card-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#btn-back{
+    margin-bottom: 80px;
 }
